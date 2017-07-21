@@ -20,10 +20,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # SHELL
 
     # *********************************
-    # /Additional Configuration Options
+    # / Additional Configuration Options
     # *********************************
 
     config.vm.provision "shell", path: "scripts/system-setup.sh", privileged: true
+    config.vm.provision "shell", path: "scripts/disable-updates.sh", privileged: true
     config.vm.provision "shell", path: "scripts/configure-desktop.sh", privileged: false
   
     config.vm.provider "virtualbox" do |vb|

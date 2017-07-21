@@ -3,8 +3,11 @@
 clear
 echo "***************************"
 echo "Running system_setup.sh ..."
+# Update OS
 apt-get update -y
 apt-get upgrade -y
+
+# Install Packages
 apt-get --yes install git
 apt-get --yes install vim
 apt-get --yes install terminator
