@@ -5,7 +5,10 @@ echo "***************************"
 echo "Running system_setup.sh ..."
 # Update OS
 apt-get update -y
-apt-get upgrade -y
+#apt-get upgrade -y
+# Work around https://github.com/chef/bento/issues/661
+# apt-get -qqy upgrade
+DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 
 # Install Packages
 apt-get --yes install git
