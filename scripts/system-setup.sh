@@ -61,4 +61,4 @@ sudo apt-get install code
 sudo curl -sL https://raw.githubusercontent.com/zerodevgroup/accelerate/master/tools/ubuntu-node-install | sudo -E bash -
 
 # Set ownership to vagrant
-chown -R vagrant:vagrant * *.* .*
+#chown -R vagrant:vagrant * *.* .*
