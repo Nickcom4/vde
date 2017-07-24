@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Additional Configuration Options
     # *********************************
     
-    # config.vm.synced_folder '.', '/home/vagrant/synced'
+     config.vm.synced_folder '.', '/home/vagrant/synced'
     
     # config.vm.provision "file", source: "scripts/file-name.sh", destination: "/home/vagrant/downloads/filename.sh"
   
