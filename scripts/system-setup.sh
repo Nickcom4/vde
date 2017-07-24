@@ -60,10 +60,5 @@ sudo apt-get install code
 #----------------------------
 sudo curl -sL https://raw.githubusercontent.com/zerodevgroup/accelerate/master/tools/ubuntu-node-install | sudo -E bash -
 
-#----------------------------
-# Install Angular CLI
-#----------------------------
-npm install -g @angular/cli
-
 # Set ownership to vagrant
 chown -R vagrant:vagrant * *.* .*

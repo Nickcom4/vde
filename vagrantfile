@@ -24,8 +24,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # *********************************
 
     config.vm.provision "shell", path: "scripts/system-setup.sh", privileged: true
-    config.vm.provision "shell", path: "scripts/disable-updates.sh", privileged: true
-    config.vm.provision "shell", path: "scripts/desktop-config.sh", privileged: false
+    #config.vm.provision "shell", path: "scripts/disable-updates.sh", privileged: true
+    #config.vm.provision "shell", path: "scripts/desktop-config.sh", privileged: false
   
     config.vm.provider "virtualbox" do |vb|
         vb.gui = true

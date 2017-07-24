@@ -28,9 +28,14 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 # Environment setup
 # git clone https://github.com/nickcom4/Respository-Name.git
 
-cp vagrant-setup/exrc .exrc
-cat vagrant-setup/bashrc >> .bashrc
-mv vagrant-setup zerodev
+#cp vagrant-setup/exrc .exrc
+#cat vagrant-setup/bashrc >> .bashrc
+#mv vagrant-setup username
+
+#----------------------------
+# Install Angular CLI
+#----------------------------
+npm install -g @angular/cli
 
 # Set ownership to vagrant
 chown -R vagrant:vagrant * *.* .*
