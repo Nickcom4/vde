@@ -3,6 +3,7 @@
 clear
 echo "***************************"
 echo "Running system_setup.sh ..."
+echo "***************************"
 # Update OS
 apt-get update -y
 #apt-get upgrade -y
